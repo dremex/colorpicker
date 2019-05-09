@@ -1,0 +1,91 @@
+{
+  "components": [
+    {
+      "tag": "soon-colorpicker",
+      "dependencies": [],
+      "componentClass": "Colorpicker",
+      "componentPath": "components/colorpicker/colorpicker.js",
+      "styles": {
+        "$": {
+          "stylePaths": [
+            "components/colorpicker/colorpicker.scss"
+          ]
+        }
+      },
+      "assetPaths": [
+        "components/colorpicker/assets"
+      ],
+      "props": [
+        {
+          "name": "image",
+          "type": "String",
+          "attr": "image",
+          "watch": [
+            "imageChange"
+          ]
+        },
+        {
+          "name": "value",
+          "type": "String",
+          "mutable": true,
+          "attr": "value",
+          "watch": [
+            "valueChange"
+          ]
+        }
+      ],
+      "states": [
+        {
+          "name": "hasFocus"
+        },
+        {
+          "name": "opened"
+        }
+      ],
+      "listeners": [
+        {
+          "event": "keydown.enter",
+          "method": "handleEnter",
+          "passive": false,
+          "capture": false
+        },
+        {
+          "event": "keydown.escape",
+          "method": "handleESC",
+          "passive": false,
+          "capture": false
+        }
+      ],
+      "methods": [
+        {
+          "name": "soonClose"
+        },
+        {
+          "name": "soonOpen"
+        }
+      ],
+      "hostElement": {
+        "name": "el"
+      },
+      "events": [
+        {
+          "event": "soonBlur"
+        },
+        {
+          "event": "soonChange"
+        },
+        {
+          "event": "soonFocus"
+        }
+      ],
+      "shadow": true
+    }
+  ],
+  "collections": [],
+  "compiler": {
+    "name": "@stencil/core",
+    "version": "0.15.2",
+    "typescriptVersion": "2.9.2"
+  },
+  "bundles": []
+}

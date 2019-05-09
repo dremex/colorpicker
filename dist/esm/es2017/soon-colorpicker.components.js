@@ -1,0 +1,2 @@
+// SoonColorpicker: Host Data, ES Module/es2017 Target
+export const Colorpicker = ["soon-colorpicker","hhnp16ue",1,[["el",64],["hasFocus",16],["image",1,0,1,2],["opened",16],["soonClose",32],["soonOpen",32],["value",2,0,1,2]],1,[["keydown.enter","handleEnter"],["keydown.escape","handleESC"]]];
